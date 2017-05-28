@@ -19,9 +19,9 @@
                     <label class="icon-menu"for="menu-bar"></label> 
                     <nav class="menu">
                         <a href="../Index.php">Inicio</a>
-                        <a href="../Conocenos.php">Conocenos</a>
-                        <a href="../Servicios.php">Servicios</a>
-                        <a href="../Contacto.php">Contacto</a>                                              
+                        <a href="Conocenos.php">Conocenos</a>
+                        <a href="Servicios.php">Servicios</a>
+                        <a href="Contacto.php">Contacto</a>                                              
                     </nav>
                      
                 </div>                 
