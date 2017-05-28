@@ -1,0 +1,289 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-abr-2017, 8:51:29
+    Author     : Edwin
+*/
+
+@import url(header.css);
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*
+body{
+  
+    background: white; 
+    background: -webkit-linear-gradient(white, yellow);
+    background: -o-linear-gradient(white, yellow); 
+    background: -moz-linear-gradient(white, yellow); 
+    background: linear-gradient(#c9af5b ,white ); 
+    
+}*/
+
+.paquete_individual{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.combo_equipos{
+       padding-left: 50px;
+}
+
+.nuestros_servicios{
+    margin: 40px;
+    margin-bottom: 0px;
+    color:#c9af5b;
+    font-size: 30px;
+    font-family:serif;
+}
+a{
+    text-decoration: none;
+}
+
+h3{
+    color:#ff6e30;
+}
+
+.rentadecaballos{
+    margin-top: -555px;
+ margin-left: 650px;
+ 
+}
+
+.zonadecamping{
+ margin-top: 160px;  
+ margin-left:650px;
+ 
+}
+.organizatuevento{
+    margin-top: -200px;  
+ margin-left: 450px;
+ padding-bottom: 50px;
+ 
+}
+
+input{
+    display: block;
+    padding: 10px;
+    width: 400px;
+    margin: 30px 0;
+    font-size: 20px;
+    background:#c9af5b;
+    color:#e8edff;
+    border-radius: 20px;
+}
+
+input:hover{
+    background:#ff6e30;     
+}
+
+.precios{
+    margin-bottom: 300px;
+}
+
+.lista li{   
+    float: right;
+    display: inline-block;   
+    
+}
+
+
+.lista a{   
+  margin-left: 10px; 
+}
+.lista{
+     padding: 0px; 
+     margin-left: -200px;
+}
+
+table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 45px;     width: 480px; text-align: left;    border-collapse: collapse; }
+
+th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: rgb(20, 20, 29);
+    border-top: 2px solid rgb(20, 20, 29);    border-bottom: 1px solid ; color: white; }
+
+td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid ;
+    color: #669;    border-top: 1px solid; }
+
+tr:hover td { background: #d0dafd; color: #339; }
+
+
+
+@media (max-width:1000px){
+                      
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;     width: 100px; text-align: left;    border-collapse: collapse; 
+    margin-left:0px;
+       }
+                    
+       .menu{
+           height:215vh;
+       }
+       
+       .rentadecaballos,.zonadecamping{
+           margin-top: 0px;
+           margin-left: 50px;
+           
+       }
+       
+        .organizatuevento{
+          margin-top: -970px;
+           margin-left: 500px; 
+           margin-bottom: 700px;
+       }
+       input{
+           width: 210px;           
+       }
+       
+  
+} 
+
+
+
+
+
+
+@media (max-width:800px){
+                      
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;     width: 100px; text-align: left;    border-collapse: collapse; 
+    margin-left:0px;
+       }
+                    
+       .menu{
+           height:215vh;
+       }
+       
+       .rentadecaballos,.zonadecamping{
+           margin-top: 0px;
+           margin-left: 50px;
+           
+       }
+       
+        .organizatuevento{
+          margin-top: -970px;
+           margin-left: 500px; 
+           margin-bottom: 700px;
+       }
+       input{
+           width: 210px;           
+       }
+       
+  
+} 
+
+
+@media (max-width:600px){
+                      
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;     width: 100px; text-align: left;    border-collapse: collapse; 
+    margin-left:0px;
+       }
+                    
+       .menu{
+           height:230vh;
+       }
+       
+       .rentadecaballos,.zonadecamping{
+           margin-top: 0px;
+           margin-left: 50px;
+           
+       }
+       
+        .organizatuevento{
+           margin-top: -170px;
+           margin-left: 10px;   
+            margin-bottom: 0px;
+       }
+       input{
+           width: 210px;           
+       }
+  
+} 
+
+
+
+
+@media (max-width:500px){
+                      
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;     width: 100px; text-align: left;    border-collapse: collapse; 
+    margin-left:0px;
+       }
+                    
+       .menu{
+           height:232vh;
+       }
+       
+       .rentadecaballos,.zonadecamping{
+           margin-top: 0px;
+           margin-left: 50px;
+           
+       }
+       
+        .organizatuevento{
+           margin-top: -170px;
+           margin-left: 10px;      
+       }
+       input{
+           width: 210px;           
+       }
+  
+} 
+
+@media (max-width:400px){
+                      
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;     width: 100px; text-align: left;    border-collapse: collapse; 
+    margin-left:0px;
+       }
+                    
+        .menu{
+           height:240vh;
+       }
+       
+       .rentadecaballos,.zonadecamping{
+           margin-top: 0px;
+           margin-left: 50px;
+           
+       }
+         .organizatuevento{
+           margin-top: -170px;
+           margin-left: 10px;      
+       }
+       input{
+           width: 210px;           
+       }
+}  
+  
+
+
+
+@media (max-width:300px){
+                      
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;     width: 100px; text-align: left;    border-collapse: collapse; 
+    margin-left:0px;
+       }
+                    
+       .menu{
+           height:260vh;
+       }
+       
+       .rentadecaballos,.zonadecamping{
+           margin-top: 0px;
+           margin-left: 50px;
+           
+       }
+  
+       .organizatuevento{
+           margin-top: -170px;
+           margin-left: 10px;      
+       }
+       input{
+           width: 210px;           
+       }
+}  

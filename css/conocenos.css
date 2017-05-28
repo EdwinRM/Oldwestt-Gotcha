@@ -1,0 +1,435 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-abr-2017, 9:12:29
+    Author     : Edwin
+*/
+@import url(header.css);
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+//    background: ;
+    //background: white; 
+    //background: -webkit-linear-gradient(white, yellow); 
+    //background: -o-linear-gradient(white, yellow); 
+    //background: -moz-linear-gradient(white, yellow); 
+    //background: linear-gradient(white,#c9af5b );
+    
+}
+
+
+
+.texto_principal {
+    text-align:justify;
+    margin-left: 540px;
+    margin-top: -420px;
+    font-size: 21px;
+    padding-right: 20px;  
+   font-weight:600;
+    font-family: 'Open Sans Condensed', sans-serif;    
+}
+
+.quienesomos{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.imagen{
+   margin-top: 10px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.texto2{
+    margin-left: 90px;
+   margin-top:  -300px;
+    text-align:justify;
+    font-size: 20px;
+    padding: 13px;
+    font-family:fantasy;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    width: 300px;
+    margin: 30px 0;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background:#c9af5b;
+    color:#e8edff;
+    border-radius: 20px;
+}
+
+input:hover{
+    background:#ff6e30;     
+}
+
+
+h2{
+    margin: 40px;
+    margin-bottom: 0px;
+    color:#c9af5b;
+    font-size: 30px;
+    font-family:serif;
+}
+
+.organizatuevento{
+    margin-top:  -450px;
+    margin-left: 600px;
+    margin-bottom: 300PX;
+}
+
+.section2{
+    margin-top: 50px;
+    padding-bottom: 200px;
+    margin-left: 100px;
+}
+
+
+h3{
+    color:#ff6e30;
+}
+
+
+table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 45px;     width: 480px; text-align: left;    border-collapse: collapse; }
+
+th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: rgb(20, 20, 29);
+    border-top: 2px solid rgb(20, 20, 29);    border-bottom: 1px solid ; color: white; }
+
+td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid ;
+    color: #669;    border-top: 1px solid; }
+
+tr:hover td { background: #d0dafd; color: #339; }
+
+@media (max-width:1000px){
+ 
+    
+    input{
+    display: block;
+   // padding: 10px;
+    width: 250px;   
+    font-size: 20px;  
+    background:#c9af5b;
+    color:#e8edff;
+    border-radius: 20px;
+    }
+        
+    .organizatuevento{
+        margin-left: 450px;
+        margin-top:-400px;
+        margin-bottom: 200px;
+    }
+    
+    .imagen{
+        margin-left: 230px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .texto_principal{
+        margin-top: -70px;
+        margin-left: 10px;
+        }
+    .section2{
+            margin-left: 10px;
+        }   
+        
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;     width: 300px; text-align: left;    border-collapse: collapse; 
+    margin-left:80px;
+       }
+                    
+       .menu{
+           height:254vh;
+       }
+  
+}  
+
+
+@media (max-width:900px){
+ 
+    
+    input{
+    display: block;
+   // padding: 10px;
+    width: 250px;   
+    font-size: 20px;  
+    background:#c9af5b;
+    color:#e8edff;
+    border-radius: 20px;
+    }
+        
+    .organizatuevento{
+        margin-left: 450px;
+        margin-top:-400px;
+        margin-bottom: 200px;
+    }
+    
+    .imagen{
+        margin-left: 230px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .texto_principal{
+        margin-top: -70px;
+        margin-left: 10px;
+        }
+    .section2{
+            margin-left: 10px;
+        }   
+        
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;     width: 300px; text-align: left;    border-collapse: collapse; 
+    margin-left:80px;
+       }
+                    
+       .menu{
+           height:254vh;
+       }
+  
+}  
+
+
+
+@media (max-width:800px){
+ 
+    
+    input{
+    display: block;
+   // padding: 10px;
+    width: 250px;   
+    font-size: 20px;  
+    background:#c9af5b;
+    color:#e8edff;
+    border-radius: 20px;
+    }
+        
+    .organizatuevento{
+        margin-left: 450px;
+        margin-top:-400px;
+        margin-bottom: 200px;
+    }
+    
+    .imagen{
+        margin-left: 230px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .texto_principal{
+        margin-top: -70px;
+        margin-left: 10px;
+        }
+    .section2{
+            margin-left: 10px;
+        }   
+        
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;     width: 300px; text-align: left;    border-collapse: collapse; 
+    margin-left:80px;
+       }
+                    
+       .menu{
+           height:254vh;
+       }
+  
+}  
+
+
+
+
+
+@media (max-width:600px){
+ 
+    
+    input{
+    display: block;
+   // padding: 10px;
+    width: 150px;   
+    font-size: 20px;  
+    background:#c9af5b;
+    color:#e8edff;
+    border-radius: 20px;
+    }
+        
+    .organizatuevento{
+        margin-left: 150px;
+        margin-top:100px;
+        margin-bottom: -60px;
+    }
+    
+    .imagen{
+        margin-left: 130px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .texto_principal{
+        margin-top: -70px;
+        margin-left: 10px;
+        }
+    .section2{
+            margin-left: 10px;
+        }   
+        
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;     width: 300px; text-align: left;    border-collapse: collapse; 
+    margin-left:80px;
+       }
+                    
+       .menu{
+           height:301vh;
+       }
+  
+}  
+
+
+
+
+
+@media (max-width:500px){
+ 
+    
+    input{
+    display: block;
+   // padding: 10px;
+    width: 150px;   
+    font-size: 20px;  
+    background:#c9af5b;
+    color:#e8edff;
+    border-radius: 20px;
+    }
+        
+    .organizatuevento{
+        margin-left: 150px;
+        margin-top:100px;
+        margin-bottom: -60px;
+    }
+    
+    .imagen{
+        margin-left: 130px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .texto_principal{
+        margin-top: -70px;
+        margin-left: 10px;
+        }
+    .section2{
+            margin-left: 10px;
+        }   
+        
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 35px;     width: 300px; text-align: left;    border-collapse: collapse; 
+    margin-left:80px;
+       }
+                    
+       .menu{
+           height:301vh;
+       }
+  
+}  
+
+
+
+
+
+
+@media (max-width:400px){
+ 
+    
+    input{
+    display: block;
+   // padding: 10px;
+    width: 150px;   
+    font-size: 20px;  
+    background:#c9af5b;
+    color:#e8edff;
+    border-radius: 20px;
+    }
+        
+    .organizatuevento{
+        margin-left: 30px;
+        margin-top:100px;
+        margin-bottom: -60px;
+    }
+    
+    .imagen{
+        margin-left: 70px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .texto_principal{
+        margin-top: -70px;
+        margin-left: 10px;
+        }
+    .section2{
+            margin-left: 10px;
+        }   
+        
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 45px;     width: 50px; text-align: left;    border-collapse: collapse; 
+    margin-left:70px;
+       }
+       
+       .menu{
+           height:402vh;
+       }
+  
+}  
+
+
+
+
+@media (max-width:300px){    
+    input{
+    display: block;
+   // padding: 10px;
+    width: 150px;   
+    font-size: 20px;  
+    background:#c9af5b;
+    color:#e8edff;
+    border-radius: 20px;
+    }
+        
+    .organizatuevento{
+        margin-left: 30px;
+        margin-top:100px;
+        margin-bottom: -60px;
+    }
+    
+    .imagen{
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .texto_principal{
+        margin-top: -70px;
+        margin-left: 10px;
+        }
+    .section2{
+            margin-left: 10px;
+        }   
+        
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 45px;     width: 40px; text-align: left;    border-collapse: collapse; 
+       }
+       
+       .menu{
+           height:462vh;
+       }
+  
+}    
+
+

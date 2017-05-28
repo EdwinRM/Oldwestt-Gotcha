@@ -1,0 +1,195 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-abr-2017, 12:51:32
+    Author     : Edwin
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#contenedor-footer{
+    width: 100%;
+    height: 200px;
+    color: #666666;
+   background: rgb(20, 20, 29); 
+}
+
+#color2{/* color arena*/   
+    height: 5px;
+    width: auto;
+    background:#c9af5b;
+}
+#color3{/* color arena*/    
+    height: 38px;
+    width: auto;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px rgb(20, 20, 29);
+    background:#c9af5b;
+    font-family:Georgia sanserif;
+    font-size: 15px;
+}
+#color3 a{   
+    color: white;
+    font-size: 18px;
+    text-shadow: none;
+    text-decoration-line: none;
+      text-shadow: 1px 1px rgb(20, 20, 29);
+         font-family:Georgia sanserif;
+}
+#color3 a:hover{
+ 
+     text-shadow: none;
+   color: rgb(20, 20, 29);;
+}
+
+.social {	        
+    position: absolute;     
+    /*	z-index: 2000;  /* que los iconos esten arriba de todo */
+
+}
+.social ol {   
+    margin-top: 50px;
+    margin-left: 60px;
+    list-style: none;                
+    display: inline-flex;		
+}
+
+.social ol li a {      
+    display: inline-block; /* para editar a los elementos "a" se requiere un display block */      
+    border-radius: 2px;
+    padding: 9px 9px;
+    text-decoration: none; 
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+    margin: 6px;
+}
+
+.social ol li .icon-facebook {  background: #c9af5b;
+                                color:#f4f4f4;
+                                font-size: 20px;}
+
+.social ol li .icon-instagram {   background: #c9af5b;
+                                  color: #f4f4f4;
+                                  font-size: 20px;}
+
+.social ol li .icon-youtube  {     background: #c9af5b;
+                                   color: #f4f4f4;
+                                   font-size: 20px;}
+.social ol li  a:hover {    
+    background:rgb(20, 20, 29);  
+    color:  #c9af5b;
+    border:1px solid white;
+}
+
+.textofooter{   
+       font-family:Georgia sanserif;
+    text-align: justify;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+.textodireccion{
+       font-family:Georgia sanserif;
+    margin-top: -110px;
+    text-align:justify;
+    margin-left: 900px;
+}
+@media(max-width:1050px){
+     .social ol{
+        display: inherit;
+    }
+    .textodireccion{
+          margin-left: 600px;
+          margin-top: -110px;
+    }
+    .textofooter{
+     margin-left: 90px;
+          margin-top: 30px;
+    }
+    
+}
+
+@media(max-width:900px){
+      
+    #color3 a{   
+    color: white;
+    font-size: 17px;  
+}
+ #color3 {
+        font-size: 12px;
+    } 
+        .textofooter{
+        margin-left: 60px;      
+    }
+    .textodireccion{
+       margin-left:550px;   
+    }
+     
+}
+@media(max-width:900px){
+      
+    #color3 a{   
+    color: white;
+    font-size: 17px;  
+}
+ #color3 {
+        font-size: 12px;
+    } 
+        .textofooter{
+        margin-left: 60px;      
+    }
+    .textodireccion{
+       margin-left:550px;   
+    }
+     
+}
+
+@media(max-width:700px){
+     #color3 {
+        font-size: 10px;
+    } 
+    .textodireccion{
+        margin-left: 65px;
+        margin-top: -100px;
+    }
+     
+    .social ol{
+    color:  #c9af5b;
+   font-size: 5px;
+}
+.textofooter{
+       visibility:hidden;
+    }
+}
+@media(max-width:500px){
+
+    .textodireccion{
+     
+        margin-top: -150px;
+    }
+}
+@media(max-width:400px){
+
+    .textodireccion{
+     
+        margin-top: -150px;
+    }
+}
+@media(max-width:300px){
+
+    .textodireccion{     
+               margin-top: -220px;
+    }
+    #color3{       
+        padding: 45px;
+    }    
+     #color3 p{    
+    margin-top: -15px;
+    } 
+}

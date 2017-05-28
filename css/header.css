@@ -1,0 +1,160 @@
+/* 
+    Created on : 17-abr-2017, 12:54:29
+    Author     : Edwin
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: 'Open Sans', sans-serif;
+}
+#color{/* color arena*/   
+    height: 10px;
+    width: auto;
+    background:#c9af5b;
+}
+#color2{/* color arena*/   
+    height: 6px;
+    width: auto;
+    background:#c9af5b;
+}
+#logo{
+      position: absolute;
+}
+#logo img{ 
+    margin-left: 10px;
+    margin-top:-2px; 
+  width: 153px;      
+}
+header{
+    width: 100%;
+    height: 120px;
+    background: rgb(20, 20, 29);
+    color: #FFF;
+    
+   // position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 100;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+      padding-left: 160px;
+    padding-top: 40px;
+    text-align: left;
+    color:#c9af5b;
+    font-weight: 300;
+     font-size: 26px;
+    font-family: Georgia,serif;
+}
+header .contenedor{
+    display: table;
+}
+
+#menu-bar{
+    display: none;
+    
+}
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 40px 0;
+    cursor: pointer;
+}
+.menu {
+    position: absolute; 
+    margin-top: 30px;
+    left: 0;   
+    width: 100%;
+    height:auto;
+    background: rgb(20, 20, 29);   
+    transition: all 0.2s;
+    transform: translateX(-100%);
+    z-index: 400;
+       
+}
+.menu a {   
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.menu a:hover {
+   
+    background:  rgba(255,255,255,0.3);
+}
+
+#menu-bar:checked ~ .menu
+{
+   
+    transform: translateX(0%);
+}
+
+@media (min-width:1024px){
+    .menu{
+        position: static;
+        width: auto;     
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        
+    }
+    
+    header label{
+    display: none;
+}
+}
+.menu a{
+    border: none;
+}
+@media(max-width:1024px){
+    .menu{   
+        margin-top: 110px;     
+         background: rgba(51,51,51,0.9);   
+    } 
+}
+
+@media(max-width:1000px){
+    .menu{   
+        margin-top: 110px;     
+         background: rgba(51,51,51,0.9);   
+    }
+    h1 {
+      
+ font-size: 26px;
+}
+}
+@media(max-width:600px){
+    
+    h1 {
+        
+display: none;
+}
+}
+
+@media(max-width:300px){    
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 40px 0;
+    cursor: pointer;
+}
+}
+
+
+
+
