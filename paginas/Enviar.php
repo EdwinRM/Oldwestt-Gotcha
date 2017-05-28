@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-$destino ="Oldwestgotchacadereyta@gmail.com";
+$destino ="edwinrmondragon@gmail.com";
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
 $mensaje = $_POST["mensaje"];
