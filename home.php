@@ -124,7 +124,7 @@
          </div>
            <div id="color3">
             <p>Copyright © 2017 Old West Gotcha Cadereyta/ All rights reserved.</p>
-            <a href="Paginas/Logindeacceso.php">Adminstrador</a>
+            <a href="paginas/Logindeacceso.php">Adminstrador</a>
            </div>
       </footer>
     </body>
