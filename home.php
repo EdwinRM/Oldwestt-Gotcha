@@ -30,9 +30,9 @@
                 <label class="icon-menu"for="menu-bar"></label> 
                 <nav class="menu">
                     <a href="Index.php">Inicio</a>
-                    <a href="/Paginas/Conocenos.php">Conocenos</a>
-                    <a href="/Paginas/Servicios.php">Servicios</a>
-                    <a href="/Paginas/Contacto.php">Contacto</a>                                              
+                    <a href="paginas/Conocenos.php">Conocenos</a>
+                    <a href="paginas/Servicios.php">Servicios</a>
+                    <a href="paginas/Contacto.php">Contacto</a>                                              
                 </nav>
 
             </div>                
