@@ -14,3 +14,4 @@ $mensaje = $_POST["mensaje"];
 $contenido="Nombre: ".$nombre. "\nCorreo: ".$correo."\nMensaje: ".$mensaje;
 mail($destino, "Contacto", $contenido);
 echo '<script> alert("Correo enviado; Este atento a su correo le responderenmos lo mas pronto posible gracias.");</script>';
+header('Location: Conocenos.php');
