@@ -14,5 +14,5 @@ $mensaje = $_POST["mensaje"];
 $contenido="Nombre: ".$nombre. "\nCorreo: ".$correo."\nMensaje: ".$mensaje;
 mail($destino, "Contacto", $contenido);
 echo '<script> alert("Correo enviado; Este atento a su correo le responderenmos lo mas pronto posible gracias.");
-window.location.href='https://oldwest.herokuapp.com/paginas/Contacto.php';</script>';
+location.reload(true);
 
