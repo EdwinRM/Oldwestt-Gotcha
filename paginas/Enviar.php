@@ -10,7 +10,7 @@ $mensaje = $_POST["mensaje"];
 $correo = "edwinrmondragon@gmail.com"
 // configuramos la cabecera que llevara el correo
 $asunto    = 'Organiza tu propio evento en Old West Gotcha';
-$cabeceras = 'From: "$_POST["correo"];"' . "\r\n" .
+$cabeceras = 'From: '$_POST['correo'];'' . "\r\n" .
              'Reply-To: edwinrmondragon@gmail.com' . "\r\n" .
              'X-Mailer: PHP/' . phpversion();   
 if(mail($correo, $asunto, $mensaje, $cabeceras)) {
