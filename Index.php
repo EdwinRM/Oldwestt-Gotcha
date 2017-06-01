@@ -1,4 +1,9 @@
+<?php
+include('paginas/funciones.php');
+$Funciones = new funciones();
+?>
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -30,9 +35,9 @@
                 <label class="icon-menu"for="menu-bar"></label> 
                 <nav class="menu">
                     <a href="Index.php">Inicio</a>
-                    <a href="paginas/Conocenos.php">Conocenos</a>
-                    <a href="paginas/Servicios.php">Servicios</a>
-                    <a href="paginas/Contacto.php">Contacto</a>                                              
+                    <a href="Paginas/Conocenos.php">Conócenos</a>
+                    <a href="Paginas/Servicios.php">Servicios</a>
+                    <a href="Paginas/Contacto.php">Contacto</a>                                              
                 </nav>
 
             </div>                
@@ -43,26 +48,26 @@
                 <li>
                     <img src="img/19.jpg" alt="">
                     <section class="flex-caption">
-                        <p class="">Old West Gotcha Cadereyta!</p><br>                  
+                        <p class="">¡Old West Gotcha Cadereyta!</p><br>                  
                     </section>
                 </li>
                 <li>
                     <img src="img/15.jpg" alt="">
                     <section class="flex-caption">                    
-                         <p>Zona para Acampar!</p>                       
+                         <p>¡Zona para Acampar!</p>                       
                     </section>
                 </li>
                 <li>
                     <img src="img/16.jpg" alt="">
                     <section class="flex-caption">
-                        <p>Adrenalina al 100%!</p>
+                        <p>¡Adrenalina al 100%!</p>
                     </section>
                 </li>
 
                 <li>
                     <img src="img/20.jpg" alt="">
                     <section class="flex-caption">
-                        <p>Divierte con tus amigos!!</p>
+                        <p>¡¡Divierte con tus Amigos!!</p>
                     </section>
                 </li>
             </ul>
@@ -75,7 +80,7 @@
                         <br><br>
                         <a href="paginas/Conocenos.php"class="icon-users"for="menu-bar"></a>
                     </div>   
-                    <li class="textfotos"><p>Mucha divercion y adrenalina  conocenos! </p></li>    
+                    <li class="textfotos"><p>¡Mucha Diversión y Adrenalina,  Conócenos! </p></li>    
                 </div>  <br>           
                 <div class="imagenes" id="imagen2">
                         <div id="color1">
@@ -83,7 +88,7 @@
                             <a href="paginas/Servicios.php"class="icon-basket"for="menu-bar"></a>
                     </div> 
                     
-                    <li class="textfotos"><p>Nuestros Paquetes y Servicios a tu alcanze! </p></li>
+                    <li class="textfotos"><p>¡Nuestros Paquetes y Servicios a tu Alcanze! </p></li>
                 </div><br>   
                 <div class="imagenes" id="imagen3">
                         <div id="color1">
@@ -91,7 +96,7 @@
                             <a href="paginas/Contacto.php"class="icon-location"for="menu-bar"></a>
                     </div>
                      
-                    <li class="textfotos"><p>Contactanos y organizamos tu propio evento!</p></li>
+                    <li class="textfotos"><p>¡Contáctanos y Organizamos tu Propio Evento!</p></li>
                 </div>                     
             </ul>                                                  
         </section>
@@ -99,7 +104,8 @@
         <section id="tree">                   
             <div id="contenedor-video-youtube">
                 <div id="video-youtube">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FqD6fmI_jQ0?ecver=1" frameborder="0" allowfullscreen></iframe>                     
+                    <?php  $dato=$Funciones->get_info_datos_empresa_by_campo('video');?>
+                    <iframe width="560" height="315" src="<?php echo $dato;?>" frameborder="0" allowfullscreen></iframe>                     
                 </div>                
             </div>
         </section> 
@@ -109,22 +115,25 @@
            <div id="color2"></div>       
            <div class="social"><span>                   
                     <ol>
-                        <li><a href="https://www.facebook.com/OldWestGotchaCadereyta/"  target= "_blank" class="icon-facebook"></a></li>
-                        <li><a href="https://www.instagram.com/oldwestgotchacadereyta/"   target= "_blank" class="icon-instagram"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCMycmCKRUHEnkJh9a39d4Zw"   target= "_blank" class="icon-youtube"></a></li>
+                          <?php  $dato=$Funciones->get_info_datos_empresa_by_campo('facebook');?>
+                        <li><a href="<?php echo utf8_encode($dato)?>"  target= "_blank" class="icon-facebook"></a></li>
+                         <?php $dato=$Funciones->get_info_datos_empresa_by_campo('instagram');?>
+                        <li><a href="<?php echo utf8_encode($dato)?>"   target= "_blank" class="icon-instagram"></a></li>
+                          <?php $dato=$Funciones->get_info_datos_empresa_by_campo('youtube');?>
+                        <li><a href="<?php echo utf8_encode($dato)?>"   target= "_blank" class="icon-youtube"></a></li>
                     </ol>
                 </span>
             </div>
-           
-                <p class="textofooter"> Mucha divercion y adrenalina te esperan en Old West Gotcha Cadereyta <br> 
-                    perfecto para pasarla con tus amigos o familiares, vivan una experiencia <br> a la viejo oeste.
-                    Sensacionales juegos de gotcha y un agradable ambiente<br> ¡Organiza tu evento con nosotros! <br><br>Horario: 12:00 - 19:00 fines de semana </p>  
-                
-                <p class="textodireccion"> Estamos ubicados en:<br>Pilancon, 76500 Cadereyta de Montes, Qro, México <br> ✆  442 361 7779</p>        
+                  <?php $dato=$Funciones->get_info_datos_empresa_by_campo('horario');?>
+                <p class="textofooter"> Mucha diversión y adrenalina te esperan en Old West Gotcha Cadereyta. <br> 
+                    Perfecto para pasarla con tus amigos o familiares, vive una experiencia <br> al estilo viejo oeste.
+                    Sensacionales juegos de gotcha y un agradable ambiente.<br> ¡Organiza tu evento con nosotros! <br><br><?php echo utf8_encode($dato)?></p>  
+                <?php $dato=$Funciones->get_info_datos_empresa_by_campo('telefono');?>
+                <p class="textodireccion"> Estamos ubicados en:<br>Pilancon, 76500 Cadereyta de Montes, Qro, México <br> ✆ <?php echo utf8_encode($dato)?></p>        
          </div>
            <div id="color3">
             <p>Copyright © 2017 Old West Gotcha Cadereyta/ All rights reserved.</p>
-            <a href="paginas/Logindeacceso.php">Adminstrador</a>
+            <a href="Paginas/Logindeacceso.php">Adminstrador</a>
            </div>
       </footer>
     </body>

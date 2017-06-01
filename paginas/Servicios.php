@@ -1,5 +1,7 @@
 <?php
 include ('header.php');
+include ('funciones.php');
+$Funciones = new funciones();
 ?>
 <html lang="en">
     <head>
@@ -14,77 +16,126 @@ include ('header.php');
         <h2 class="nuestros_servicios">Servicios y Precios </h2> 
         <div class="precios">       
             <div class="paquete_individual">
-                <h3>Paquetes Individuales</h3><h5>Incluye, marcadora, careta, chaleco y Co2 (ilimitado)</h5>        
+                <?php $datos = $Funciones->get_info_servicios_by_id('1'); ?>
+                <h3><?php echo utf8_encode($datos['nombre']) ?></h3>
+                <h5><?php echo utf8_encode($datos['descripcion']) ?></h5> 
                 <table border="1">
                     <tr>
-                        <th>Paintballs</th>
-                        <th>Precios</th>   
+                        <th>
+                            <?php echo utf8_encode($datos['columna1']) ?>
+                        </th>
+                        <th>
+                            <?php echo utf8_encode($datos['columna2']) ?>
+                        </th>
                     </tr>
-                    <tr>
-                        <td>100</td>
-                        <td>$150</td>     
-                    </tr>
-                    <tr>
-                        <td>200</td>
-                        <td>$180</td>   
-                    </tr>
-                    <tr>
-                        <td>300</td>
-                        <td>$220</td>   
-                    </tr>
-                    <tr>
-                        <td>500</td>
-                        <td>$320</td>   
-                    </tr>
-
-                </table>                    
+                    <?php
+                    $resul = $Funciones->get_all_paquetes_by_id_servicio('1');
+                    while ($fila = mysqli_fetch_array($resul)) {
+                        ?>
+                        <tr>
+                            <td>
+                                <?php echo utf8_encode($fila['columna1']) ?>
+                            </td>
+                            <td>
+                                <?php echo utf8_encode($fila['columna2']) ?>
+                            </td>     
+                        </tr>   
+                        <?php
+                    }
+                    ?>
+                </table>
             </div>
 
             <div class="combo_equipos">
-                <h3>Combo por equipos</h3><h5>Incluye, marcadora, careta, chaleco y Co2 (ilimitado)</h5>           
+                <?php $datos = $Funciones->get_info_servicios_by_id('2'); ?>
+                <h3><?php echo utf8_encode($datos['nombre']) ?></h3>
+                <h5><?php echo utf8_encode($datos['descripcion']) ?></h5> 
                 <table border="1">
                     <tr>
-                        <th>Paintballs</th>
-                        <th>Precios</th>   
+                        <th>
+                            <?php echo utf8_encode($datos['columna1']) ?>
+                        </th>
+                        <th>
+                            <?php echo utf8_encode($datos['columna2']) ?>
+                        </th>
                     </tr>
-                    <tr>
-                        <td>800</td>
-                        <td>$1000</td>     
-                    </tr>
-                    <tr>
-                        <td>2000</td>
-                        <td>$1500</td>   
-                    </tr> 
+                    <?php
+                    $resul = $Funciones->get_all_paquetes_by_id_servicio('2');
+                    while ($fila = mysqli_fetch_array($resul)) {
+                        ?>
+                        <tr>
+                            <td>
+                                <?php echo utf8_encode($fila['columna1']) ?>
+                            </td>
+                            <td>
+                                <?php echo utf8_encode($fila['columna2']) ?>
+                            </td>     
+                        </tr>   
+                        <?php
+                    }
+                    ?>
                 </table> 
             </div>                                                      
 
             <div class="rentadecaballos">
-                <h3>Renta de caballos</h3>             
-<h5>La monta de estos es dentro del establecimiento de OldWestGotcha</h5>           
+                <?php $datos = $Funciones->get_info_servicios_by_id('3'); ?>
+                <h3><?php echo utf8_encode($datos['nombre']) ?></h3>
+                <h5><?php echo utf8_encode($datos['descripcion']) ?></h5> 
                 <table border="1">
                     <tr>
-                        <th>Tiempo</th>
-                        <th>Precios</th>   
+                        <th>
+                            <?php echo utf8_encode($datos['columna1']) ?>
+                        </th>
+                        <th>
+                            <?php echo utf8_encode($datos['columna2']) ?>
+                        </th>
                     </tr>
-                    <tr>
-                        <td>30min</td>
-                        <td>$50</td>     
-                    </tr>   
+                    <?php
+                    $resul = $Funciones->get_all_paquetes_by_id_servicio('3');
+                    while ($fila = mysqli_fetch_array($resul)) {
+                        ?>
+                        <tr>
+                            <td>
+                                <?php echo utf8_encode($fila['columna1']) ?>
+                            </td>
+                            <td>
+                                <?php echo utf8_encode($fila['columna2']) ?>
+                            </td>     
+                        </tr>   
+                        <?php
+                    }
+                    ?>
                 </table> 
             </div>           
 
             <div class="zonadecamping">
-                <h3>Espacio para acampar</h3> 
-<h5>Contamos con casa de campaña (Hacer reservacion de esta con anticipo)</h5>           
+                <?php $datos = $Funciones->get_info_servicios_by_id('4'); ?>
+                <h3><?php echo utf8_encode($datos['nombre']) ?></h3>
+                <h5><?php echo utf8_encode($datos['descripcion']) ?></h5> 
                 <table border="1">
                     <tr>
-                        <th>Espacio</th>
-                        <th>Precios</th>   
+                        <th>
+                            <?php echo utf8_encode($datos['columna1']) ?>
+                        </th>
+                        <th>
+                            <?php echo utf8_encode($datos['columna2']) ?>
+                        </th>
                     </tr>
-                    <tr>
-                        <td>ilimitado</td>
-                        <td>$100 la noche</td>     
-                    </tr>   
+                    <?php
+                    $resul = $Funciones->get_all_paquetes_by_id_servicio('4');
+                    while ($fila = mysqli_fetch_array($resul)) {
+                        ?>
+                        <tr>
+                            <td>
+                                <?php echo utf8_encode($fila['columna1']) ?>
+                            </td>
+                            <td>
+                                <?php echo utf8_encode($fila['columna2']) ?>
+                            </td>     
+                        </tr>   
+                        <?php
+                    }
+                    ?>
                 </table> 
             </div>                                
         </div>

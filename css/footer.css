@@ -181,6 +181,13 @@ and open the template in the editor.
         margin-top: -150px;
     }
 }
+@media(max-width:350px){
+
+    .textodireccion{
+     
+        margin-top: -200px;
+    }
+}
 @media(max-width:300px){
 
     .textodireccion{     

@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -18,18 +20,21 @@ and open the template in the editor.
            <div id="color2"></div>       
            <div class="social"><span>                   
                     <ol>
-                            <li><a href="https://www.facebook.com/OldWestGotchaCadereyta/"  target= "_blank" class="icon-facebook"></a></li>
-                        <li><a href="https://www.instagram.com/oldwestgotchacadereyta/"   target= "_blank" class="icon-instagram"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCMycmCKRUHEnkJh9a39d4Zw"   target= "_blank" class="icon-youtube"></a></li>
+                        <?php  $dato=$Funciones->get_info_datos_empresa_by_campo('facebook');?>
+                        <li><a href="<?php echo utf8_encode($dato)?>"  target= "_blank" class="icon-facebook"></a></li>
+                         <?php $dato=$Funciones->get_info_datos_empresa_by_campo('instagram');?>
+                        <li><a href="<?php echo utf8_encode($dato)?>"   target= "_blank" class="icon-instagram"></a></li>
+                        <?php $dato=$Funciones->get_info_datos_empresa_by_campo('youtube');?>
+                        <li><a href="<?php echo utf8_encode($dato)?>"   target= "_blank" class="icon-youtube"></a></li>
                     </ol>
                 </span>
             </div>
-           
-                <p class="textofooter"> Mucha divercion y adrenalina te esperan en Old West Gotcha Cadereyta <br> 
-                    perfecto para pasarla con tus amigos o familiares, vivan una experiencia <br> a la viejo oeste.
-                    Sensacionales juegos de gotcha y un agradable ambiente<br> ¡Organiza tu evento con nosotros! <br><br>Horario: 12:00 - 19:00 fines de semana </p>  
-                
-                <p class="textodireccion"> Estamos ubicados en:<br>Pilancon, 76500 Cadereyta de Montes, Qro, México <br> ✆  442 361 7779</p>        
+                <?php $dato=$Funciones->get_info_datos_empresa_by_campo('horario');?>
+                <p class="textofooter"> Mucha diversión y adrenalina te esperan en Old West Gotcha Cadereyta. <br> 
+                    Perfecto para pasarla con tus amigos o familiares, vive una experiencia <br> al estilo viejo oeste.
+                    Sensacionales juegos de gotcha y un agradable ambiente.<br> ¡Organiza tu evento con nosotros! <br><br><?php echo utf8_encode($dato)?></p>  
+                <?php $dato=$Funciones->get_info_datos_empresa_by_campo('telefono');?>
+                <p class="textodireccion"> Estamos ubicados en:<br>Pilancon, 76500 Cadereyta de Montes, Qro, México <br> ✆ <?php echo utf8_encode($dato)?></p>        
          </div>
            <div id="color3">
             <p>Copyright © 2017 Old West Gotcha Cadereyta/ All rights reserved.</p>

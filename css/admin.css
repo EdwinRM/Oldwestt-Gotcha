@@ -1,0 +1,101 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/05/2017, 04:51:22 PM
+    Author     : YugiKitsune
+*/
+
+h2{
+    margin-top: 10px;
+     padding-left:  20px;
+    color: #ff6e30;
+}
+h3{
+   padding-left:  50px;
+    color: #339;
+}
+h5{
+       padding-left:  50px;
+}
+table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 45px;     width: 480px; text-align: left;    border-collapse: collapse; }
+
+th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: rgb(20, 20, 29);
+    border-top: 2px solid rgb(20, 20, 29);    border-bottom: 1px solid ; color: white; }
+
+td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid ;
+    color: #669;    border-top: 1px solid; }
+
+tr:hover td { background: #d0dafd; color: #339; }
+
+.cajatx{
+    font-size: 13px;     font-weight: normal;     padding: 8px;       background: #e8edff;
+    width: 350px; border-radius: 7px;
+}
+
+button,#cancelar{ 
+    display: block;
+    padding: 5px;  
+    width: 150px; 
+    margin: 10px 0;
+    font-size: 15px;
+      background: rgb(20, 20, 29);
+    color:#e8edff;
+    border-radius: 10px;
+   
+}
+button:hover,#cancelar:hover{
+       background:#e8edff; 
+       color:black;           
+}
+
+.DatosUsuarios{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.DatosEmpresa{
+margin-left: 700px;    
+margin-top: -330px;
+}
+
+.Horarios{
+     margin-left: 660px;
+     margin-top: -1050px;
+     margin-bottom: 500px;
+}
+.Servicios{
+    margin-left:20px;    
+
+}
+a{
+    text-decoration: none;
+    color:  #ff6e30;
+}
+@media(max-width:1000px){
+    .DatosEmpresa{
+margin-left: 0px;    
+margin-top: 0px;
+}
+
+.Horarios{
+     margin-left: 0px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+}
+}
+
+@media (max-width:400px){
+                      
+       table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;      width: 200px; text-align: left;    border-collapse: collapse; 
+  
+       }
+       .Horarios{
+     margin-left: -45px;
+     margin-top: 10px;
+     margin-bottom: 0px;
+}
+       }

@@ -1,23 +1,17 @@
 <?php
-
+include('funciones.php');
+$Funciones = new funciones();
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-<?php
+$destino =$Funciones->get_info_datos_empresa_by_campo('correo');
+//$destino ="Oldwestgotchacadereyta@gmail.com";
+$nombre = $_POST["nombre"];
+$correo = $_POST["correo"];
 $mensaje = $_POST["mensaje"];
-$correo = "edwinrmondragon@gmail.com"
-// configuramos la cabecera que llevara el correo
-$asunto    = 'Organiza tu propio evento en Old West Gotcha';
-$cabeceras = 'From: '$_POST['correo'];'' . "\r\n" .
-             'Reply-To: edwinrmondragon@gmail.com' . "\r\n" .
-             'X-Mailer: PHP/' . phpversion();   
-if(mail($correo, $asunto, $mensaje, $cabeceras)) {
-    echo "Enviado";
-} else {
-    echo 'Error al enviar mensaje';
-}
-?>
 
-
+$contenido="Nombre: ".$nombre. "\nCorreo: ".$correo."\nMensaje: ".$mensaje;
+mail($destino, "Contacto", $contenido);
+echo '<script> alert("Correo enviado; Este atento a su correo le responderenmos lo mas pronto posible gracias.");</script>';

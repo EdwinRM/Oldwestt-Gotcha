@@ -1,5 +1,6 @@
 <?php
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,11 +18,8 @@
                     <input type="checkbox" id="menu-bar">
                     <label class="icon-menu"for="menu-bar"></label> 
                     <nav class="menu">
-                        <a href="../Index.php">Inicio</a>
-                        <a href="Conocenos.php">Conócenos</a>
-                        <a href="Servicios.php">Servicios</a>
-                        <a href="Contacto.php">Contacto</a>                                              
-                    </nav>  
+                        <a href="Logout.php">Cerrar Sesión</a>                                              
+                    </nav>            
                 </div>                 
         </header>
          <div id="color2">  </div> 

@@ -65,16 +65,16 @@ h3{
  
 }
 
-input{
+/*input{
     display: block;
     padding: 10px;
-    width: 400px; 
+    width: 400px;
     margin: 30px 0;
     font-size: 20px;
     background:#c9af5b;
     color:#e8edff;
     border-radius: 20px;
-}
+}*/
 
 input:hover{
     background:#ff6e30;     
