@@ -1,7 +1,7 @@
 <?php
     error_reporting(E_ALL ^ E_STRICT);
     ini_set('display_errors', 'On');
-    require_once 'Conexion.php';
+    require_once 'conexion.php';
 
     class funciones extends conexionbd {
 
